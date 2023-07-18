@@ -29,7 +29,7 @@ const App = ()=>{
                 <h2>TO-DO LIST</h2>
             </div>
             <div className="inputDiv">
-                <input type="text" onChange={handleInput}/>
+                <input type="text" onChange={handleInput} value={input}/>
             </div>
             <Todo todoList={todoList} handleDelete={handleDelete} handleAddTodo={handleAddTodo} />
         </div>
