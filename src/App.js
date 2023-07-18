@@ -4,7 +4,6 @@ import Todo from "./Todo";
 
 const App = ()=>{
     const [todoList, setTodoList] = useState([]);
-    const [value, setValue] = useState("");
     const [input, setInput] = useState("");
 
     const handleInput = (e)=>{
@@ -14,7 +13,7 @@ const App = ()=>{
     const handleAddTodo = ()=>{
         if(input.length !== 0){
             setTodoList([...todoList, input]);
-            setValue("");
+            setInput("");
         }else{
             alert("You can't add empty items to the list")
         }
@@ -30,7 +29,7 @@ const App = ()=>{
                 <h2>TO-DO LIST</h2>
             </div>
             <div className="inputDiv">
-                <input type="text" onChange={handleInput} value={todoList}/>
+                <input type="text" onChange={handleInput}/>
             </div>
             <Todo todoList={todoList} handleDelete={handleDelete} handleAddTodo={handleAddTodo} />
         </div>
