@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;  
+}
+
+.intro {
+  background-color: rgb(36, 36, 83);
+  background-image: url("./Images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: calc(100vh); /* Adjust the value as needed */
+}
+
+.intro-img {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0; /* Adjust the value as needed */
+}
+
+.intro-title {
+  margin: 7rem auto 1rem;
+  color: white;
+  max-width: 900px;
+  width: 65vw;
+}
+
+.intro-title h2 {
+  font-size: 3.5rem; /* Adjust the value as needed */
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.intro-text {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 60vw;
+}
+
+.intro-text p {
+  color: white;
+  font-size: 1.3rem; /* Adjust the value as needed */
+  text-align: center;
+  line-height: 2.2rem; /* Adjust the value as needed */
+}
+
+.intro-btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.875rem; /* Adjust the value as needed */
+}
+
+.intro-btn a {
+  padding: 1.2rem 4rem; /* Adjust the value as needed */
+  border-radius: 50px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem; /* Adjust the value as needed */
+}
+
+.card{
+  padding: 5rem 3rem;
+  background-image: linear-gradient(64.49deg,#2f80ec -19.7%,#8364f6 86.76%);
+  color: white;
+}
+
+.card-text{
+  display: grid;
+  grid-template-areas: 'a b';
+  grid-template-columns: 1fr 2fr;
+  gap: 7rem;
+}
+
+.card-text h1{
+  font-size: 3.4rem;
+}
+
+.card-text p{
+  padding-top: 30px;
+  font-size: 1.243rem;
+  line-height: 1.4rem;
+}
+
+.card-cards{
+  display: grid;
+  grid-template-rows: 'a b c';
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3%;
+  width: 100%;
+}
+
+.card-cards div{
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.card-cards div p{
+  padding-top: 40px;
+  font-size: 1.4rem;
+}
+
+.card-1{
+  background-color: white;
+  color: black;
+}
+
+.card-2, .card-3{
+  background-image: linear-gradient(64.49deg,#000a17 -19.7%,#150b3a 86.76%);
+  color: white;
+}
+
+.form {
+  background-image: url("./Images/bg2.png");
+  background-color: rgb(37, 37, 95);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15vh 10vw;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-height: 100vh;
+  color: white;
+}
+
+
+.form-text{
+  color: white;
+}
+
+.form-text h1 {
+  width: 50%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.form-text p {
+  width: 60%;
+  font-size: 1.3rem;
+}
+
+.form-input input{
+  display: block;
+  margin: 15px;
+  width: 38rem;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.form-input input::placeholder{
+  color: white;
+  font-size: 1.2rem;
+}
+
+.form button{
+  box-sizing: border-box;
+  background-color: white;
+  padding: 20px 40px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 50px 10px;
+  background-image: linear-gradient(64.49deg, #2f80ec -19.7%, #8364f6 86.76%);
+  color: white;
+  min-height: 50vh;
+}
+
+.footer h1 {
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 4.5rem);
+}
+
+.footer-img {
+  text-align: center;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.footer-links {
+  margin-top: clamp(2rem, 4vw, 4rem);
+  display: grid;
+  grid-template-areas: 'a b c d e';
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+}
+
+.footer-links ul {
+  flex: 1;
+}
+
+.footer-links ul li {
+  list-style: none;
+  font-size: clamp(1rem, 1vw, 5rem);
+  line-height: clamp(1.8rem, 2.5vw, 3rem);
+  margin: clamp(0.3rem, 0.5vw, 0.5rem) 0;
+}
+
+.footer-links p {
+  font-size: clamp(1rem, 1vw, 5rem);
+  line-height: clamp(1.8rem, 2.5vw, 3rem);
+  margin: clamp(0.3rem, 0.5vw, 0.5rem) 0;
+  word-break: break-word;
+}
+
+
+@media screen and (max-width: 1023px){
+  .card{
+    padding: 5rem 2rem;
+  }
+
+  .card-text{
+    display: grid;
+    grid-template-areas: 'a';
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .card-text h1{
+    font-size: 1.9rem;
+    text-align: center;
+  }
+
+  .card-text p{
+    padding-top: 10px;
+    font-size: 1.243rem;
+    line-height: 1.4rem;
+  }
+
+  .card-cards{
+    display: grid;
+    grid-template-rows: 'a';
+    grid-template-columns: 1fr;
+    gap: 3%;
+    width: 100%;
+  }
+
+  .card-cards div p{
+    font-size: 1.2rem;
+  }
+
+  .form-text h1{
+    width: 90%;
+  }
+
+  .form-text p{
+    width: 76%;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  .intro {
+    background-color: rgb(0, 0, 0);
+    background-image: url("./Images/wait-bg-mob.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .intro-title {
+    color: white;
+    width: 80vw;
+  }
+
+  .intro-title h2 {
+    font-size: 1.75rem; /* Adjust the value as needed */
+  }
+
+  .intro-text {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .intro-text p {
+    color: white;
+    font-size: 1.25rem; /* Adjust the value as needed */
+    line-height: 1.875rem; /* Adjust the value as needed */
+  }
+
+  .intro-btn a {
+    padding: 1.25rem 1.25rem; /* Adjust the value as needed */
+    border-radius: 50px;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem; /* Adjust the value as needed */
+    text-align: center;
+  }
+
+  .card-text h1{
+    font-size: 1.9rem;
+    text-align: start;
+  }
+
+  .form-text h1{
+    width: 90%;
+    font-size: 1.6rem;
+  }
+
+  .form-text p{
+    width: 76%;
+  }
+
+  .form-input input{
+    display: block;
+    margin: 15px;
+    width: 90%;
+  }
+
+  .footer h1{
+    text-align: center;
+  }
+
+  .footer-links{
+    margin-top: 80px;
+    display: grid;
+    grid-template-areas: 'a';
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links ul li{
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 340px){
+.footer-img{
+  text-align: center;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+}

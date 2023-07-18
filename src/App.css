@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+   background-color: rgb(222, 252, 249);
+   font-family: 'Indie Flower', cursive;
+}
+
+.todo-container{
+   margin: 100px auto;
+   background-color: rgb(213, 143, 235);
+   width: 50vw;
+   max-width: 600px;
+   min-width: 200px;
+   position: relative;
+}
+
+.todo-header{
+   display: flex;
+   justify-content: center;
+   color: white;
+}
+
+.todo-items{
+   background-color: white;
+   position: absolute;
+   top: 160px;
+   width: 100%;
+}
+
+.todo-item{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 30px;
+}
+
+.todo-item-1{
+   display: flex;
+   gap: 30px;
+}
+
+.todo-item-1 input[type="checkbox"]{
+   width: 20px;
+   box-sizing: border-box;
+}
+
+.todo-item-1 input[type="checkbox"]:checked + h4{
+   text-decoration: line-through;
+   color: gray;
+}
+
+.todo-item img{
+   cursor: pointer;
+}
+
+.todo-item img:hover{
+   box-shadow: 10px 10px 40px black;
+}
+
+.btnDiv{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+
+.btnDiv button{
+   background-color: rgb(213, 143, 235);
+   box-sizing: border-box;
+   width: 20vw;
+   max-width: 200px;
+   border-style: none;
+   color: white;
+   font-size: 25px;
+   padding: 12px 10px;
+   border-radius: 20px;
+   transition: box-shadow .2s ease-in;
+}
+
+.btnDiv button:hover{
+   cursor: pointer;
+   box-shadow: 10px 10px 10px 1px rgb(141, 141, 141);
+}
+
+.btnDiv button:focus{
+   box-shadow: 10px 10px 10px 1px rgb(58, 58, 58);
+}
+
+.inputDiv{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+input[type="text"]{
+   text-align: center;
+   margin-bottom: 20px;
+   padding: 5px 20px;
+   width: 20vw;
+   max-width: 300px;
+}
+
+
+@media screen and (max-width: 757px) {
+   .todo-container{
+      width: 85vw;
+   }
+
+   input[type="text"]{
+      width: 40vw;
+   }
+ 
+   .btnDiv button{
+      background-color: rgb(213, 143, 235);
+      box-sizing: border-box;
+      width: 40vw;
+      max-width: 200px;
+      border-style: none;
+      color: white;
+      font-size: 25px;
+      padding: 12px 10px;
+      border-radius: 20px;
+      transition: box-shadow .2s ease-in;
+   }
+}
